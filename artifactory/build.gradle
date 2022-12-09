@@ -35,7 +35,7 @@ dependencies {
 publishing {
     publications {
         jar(MavenPublication) {
-            groupId 'cursojenkinsmac'
+            groupId 'systtekcloud'
             artifactId 'gs-gradle'
             version '1.0'
             from components.java
@@ -62,7 +62,7 @@ allprojects {
 artifactory {
     publish {
         repository {
-            repoKey = 'default-gradle-dev-local'
+            repoKey = 'project-gradle-dev-local'
             maven = true
         }
         defaults {
@@ -73,7 +73,7 @@ artifactory {
     }
     resolve {
         repository {
-            repoKey = 'default-gradle-dev'
+            repoKey = 'project-gradle-dev'
             maven = true
 
         }
