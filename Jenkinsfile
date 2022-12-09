@@ -1,5 +1,5 @@
 node {
-  def myGradleContainer = docker.image('gradle:jdk19-jammy')
+  def myGradleContainer = docker.image('gradle:jdk8-jammy')
   myGradleContainer.pull()
   stage('SCM check y Preparacion') {
     checkout scm
